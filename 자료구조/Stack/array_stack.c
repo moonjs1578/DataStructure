@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define Max 100
+#define MAX 100
 
 typedef int element;
 typedef struct{
-    element data[Max];
+    element data[MAX];
     int top;
 }StackType;
 
@@ -17,7 +17,7 @@ int is_empty(StackType *s){
 }
 
 int is_full(StackType *s){
-    return (s->top == Max-1);
+    return (s->top == MAX-1);
 }
 
 void push(StackType *s, element item){
